@@ -21,7 +21,6 @@ function! sf#Populate(cmd, bang, args) abort
 
   if empty(a:bang)
     silent! cfirst!
-    silent! cnext!
   endif
 
   if exists('#QuickFixCmdPost#' . a:cmd)
